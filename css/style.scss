@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: var.$font;
+  font-family: var.$font-prim;
   background-color: var.$bg-color;
 
   p {
@@ -67,4 +67,20 @@ nav {
   a:hover {
     color: var.$prim-color;
   }
+}
+
+.mobile-nav {
+  .bars {
+    display: none;
+    cursor: pointer;
+  }
+}
+
+.toggleShow {
+  display: flex;
+  flex-direction: column;
+}
+
+.active {
+  color: var.$prim-color;
 }
