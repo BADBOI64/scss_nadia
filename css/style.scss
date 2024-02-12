@@ -51,4 +51,20 @@ nav {
   img {
     width: 70px;
   }
+  ul {
+    @include var.flex;
+    list-style-type: none;
+  }
+  a {
+    padding: var.$pad-fir;
+    color: var.$text-color;
+    margin: var.$pad-fir;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var.$prim-color;
+  }
 }

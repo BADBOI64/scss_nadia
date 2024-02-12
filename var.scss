@@ -5,6 +5,7 @@ $footer-color: #0a1f1c;
 $prim-color: #3a8479;
 $sec-color: #133833;
 $text-color: #484848;
+$pad-fir: 0.5em;
 
 @mixin flex($justify: center, $align: center) {
   display: flex;
