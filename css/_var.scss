@@ -12,3 +12,12 @@ $pad-fir: 0.5em;
   justify-content: $justify;
   align-items: $align;
 }
+
+@mixin knap($bg-color: $prim-color, $padding: 0.8em 1em) {
+  background-color: $bg-color;
+  padding: $padding;
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}

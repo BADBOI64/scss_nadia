@@ -45,7 +45,7 @@ header {
 }
 
 nav {
-  height: 4em;
+  height: 5em;
   padding: 1em;
   @include var.flex($justify: space-between);
   img {
@@ -83,4 +83,33 @@ nav {
 
 .active {
   color: var.$prim-color;
+}
+
+.header-img {
+  position: relative;
+  margin-bottom: 1em;
+
+  .banner-tekst {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+  }
+  h1 {
+    font-size: 3.5vw;
+  }
+  p {
+    font-size: 2vw;
+  }
+  a {
+    @include var.knap;
+    position: absolute;
+    &:hover {
+      background-color: var.$sec-color;
+      transition: 0.3s ease-in-out;
+    }
+  }
+}
+
+.bg-billede-mobil {
+  display: none;
 }
